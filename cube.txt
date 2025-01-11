@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class CUBE {
+private double length;
+
+void setLength(double l) {
+length = l;
+}
+
+double Volume() {
+return length * length * length;
+}
+
+double Area() {
+return 6 * length * length;
+}
+
+Scanner sc = new Scanner(System.in);
+
+void input(CUBE obj, int i) {
+System.out.print("Cube-" + i + ": ");
+obj.setLength(sc.nextDouble());
+}
+
+void display(CUBE obj, int i) {
+System.out.println("\nCube-" + i + " Volume: " + (float) obj.Volume() + " cubic units and Outer Area: "
++ (float) obj.Area() + " sq units");
+}
+}
+
+public class CubeApp {
+public static void main(String[] args) {
+CUBE obj1 = new CUBE();
+CUBE obj2 = new CUBE();
+CUBE obj3 = new CUBE();
+
+System.out.println("\nEnter the side length of ~ ");
+obj1.input(obj1, 1);
+obj2.input(obj2, 2);
+obj3.input(obj3, 3);
+
+obj1.display(obj1, 1);
+obj1.display(obj2, 2);
+obj1.display(obj3, 3);
+}
+}
+    
+
