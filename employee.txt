@@ -21,7 +21,6 @@ System.out.print("Enter department: ");
 department = sc.nextLine();
 System.out.print("Enter basic pay: ");
 basicPay = sc.nextDouble();
-sc.close();
 grossPay = computeGrossPay();
 netPay = computeNetPay();
 }
