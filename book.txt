@@ -26,7 +26,7 @@ System.out.println(name + "\t" + code + "\t" + unitPrice + "\t\t" + quantity + "
 
 }
 
-public class _8GetBook {
+public class GetBook {
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
 
